@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>java script loop satatment </title>
+    </head>
+    <body>
+        
+
+        <ol class="myol">
+
+        </ol>
+
+        <script>
+            //i can write the js code cloging the body tag
+            const list = document.querySelector('.myol')
+            console.log(list)
+
+            let name = prompt("enter your name")
+            console.log(name)
+
+            var namberr = prompt('enter any namber ')
+            console.log(namberr)
+
+            var convert = parseInt(namberr);//Convert string ---> namber 
+
+            /*
+                for (expression 1; expression 2; expression 3) {
+                    // code block to be executed
+                }
+
+
+                for (variable initialization 1;  condition cheking 2; incriment/decriment 3) {
+                    // code block to be executed
+                }
+            */
+
+            for (let x=1; x<=convert; x++){
+                console.log(list)
+                list.innerHTML += `<li>Hello ${name},welcome</li>`
+
+            }
+        </script>
+    </body>
+</html>
